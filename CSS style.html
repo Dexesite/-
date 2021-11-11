@@ -2,7 +2,32 @@
 <html>
   <head>
     <title>CSS style</title>
-
+    <style>
+      .alignleft {
+        text-align: left;
+      }
+      .aligncenter {
+        text-align: center;
+      }
+      .alignright {
+        text-align: right;
+      }
+      .fontsize50 {
+        font-size: 50px;
+      }
+      .fontsize150 {
+        font-size: 150px;
+      }
+      .fontnorm {
+        font-style: normal;
+      }
+      .fontitalic {
+        font-style: italic;
+      }
+      .fontoblique {
+        font-style: oblique;
+      }
+    </style>
   </head>
   <body>
     <div>
@@ -17,17 +42,37 @@
           <p>Имеет 3 значения: left, center, right</p>
         <h3>Цвет текста color:</h3>
           <p>Мы можем указать просто цвет на английском или html код цвета</p>
+        <h2>Примеры</h2>
+        <div class="alignleft" title="<тег class=alignleft>">Слева</div>
+        <div class="aligncenter">По центру</div>
+        <div class="alignright">Справа</div>
+        <small>P.s. имена классов в ""</small>
         <h3>Размер шрифта font-size</h3>
-          <p>Указываем в пикселях</p>
+          <p>С помощью команды font-size можно изменить размер шрифта</p>
+          <div class="fontsize50" title=".класс { font-size: 50px; }">Пример</div>
+          <div class="fontsize150" title=".класс { font-size: 150px }">Пример</div>
         <h3>Обводка границы блока border</h3>
           <p>border: (размер в px) (какая линия) (цвет)</p>
+          <p>Пунктирная линия</p>
+          <p>Споошная линия</p>
         <h3>Отступ от элементов margin</h3>
           <p>Отступ вниз margin-bottom px</p>
           <p>Отступ вверх margin-top px</p>
         <h3>Начертание шрифта font-style</h3>
+          <div>
           <p>font-style: normal Обычное начертание текста</p>
-          <p>font-style: italic Курсивное начертание.</p>
-          <p title=" Курсив и наклонный шрифт при всей их похожести не одно и то же. Курсив это специальный шрифт имитирующий рукописный, наклонный же образуется путем наклона обычных знаков вправо.">font-style: oblique Наклонное начертание Курсив и наклонный шрифт при всей их похожести не одно и то же. Курсив это специальный шрифт имитирующий рукописный, наклонный же образуется путем наклона обычных знаков вправо.</p>
+          <div class="normal" title=".класс { font-style:normal; }">
+            пример
+          </div>
+          </div>
+          <p>font-style: italic Курсивное начертание</p>
+          <div class="fontitalic" title=".класс { font-style: italic; }">
+            Пример
+          </div>
+          <p title=" Курсив и наклонный шрифт при всей их похожести не одно и то же. Курсив это специальный шрифт имитирующий рукописный, наклонный же образуется путем наклона обычных знаков вправо.">font-style: oblique Наклонное начертание</p>
+          <div class="fontoblique" title=".класс { font-style:oblique; }">
+            Пример
+          </div>
           <p>font-style: inherit Наследует значение родителя</p>
       </div>
       <a href="../atom/learn v2.0.html">Назад</a>
